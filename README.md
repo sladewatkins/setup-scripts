@@ -8,7 +8,7 @@ Copy, paste, then run this command in **Terminal.app**. Keep in mind, it's setti
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/sladewatkins/setup-scripts/HEAD/mac-setup.sh)"
 ```
 
-This script requires macOS Monterey (12.x) to function at the bare minimum (app limitations), but is fully compatible with (and tested thoroughly on) macOS Ventura (13.x) and later. It should work fine on Intel Macs, but I've only tested on Apple silicon (M2).
+This script requires [macOS Monterey (12.x)](https://apps.apple.com/us/app/macos-monterey/id1576738294?mt=12) to function at the bare minimum (app limitations), but is fully compatible with (and tested thoroughly on) [macOS Ventura (13.x)](https://apps.apple.com/us/app/macos-ventura/id1638787999?mt=12) and [macOS Sonoma (14.x)](https://www.apple.com/macos/sonoma/). It should work fine on Intel Macs, but I've only tested on Apple silicon (M2).
 
 ## Pop!_OS 22.04
 Coming soon.
