@@ -15,7 +15,7 @@ brew update
 
 # get all my mandatory apps from Homebrew
 # everything I need to get some serious work done the computer
-brew install 1password 1password-cli spotify discord alfred steam steamcmd iina git hiddenbar imageoptim microsoft-office android-platform-tools rbenv
+brew install altserver 1password 1password-cli spotify discord alfred steam steamcmd iina git hiddenbar imageoptim microsoft-office android-platform-tools rbenv
 
 # why does Apple still ship an ancient version of git in the 2020s by default?!
 # anyways, config git really fast
