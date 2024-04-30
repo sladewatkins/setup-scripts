@@ -29,7 +29,7 @@ git config --global core.editor "nano"
 # for example, "mac app store 899247664" returns results for "TestFlight", which I use to beta test apps on iOS/macOS!
 # remember that if you're ever confused what something is (it's gonna happen)
 brew install mas
-mas install 899247664 1569813296 1436953057 1659154653 1508706541 2144121543 1463298887
+mas install 497799835 899247664 1569813296 1436953057 1659154653 1508706541 2144121543 1463298887
 
 # get devkitpro
 # mainly for rverse and other Nintendo homebrew stuff
