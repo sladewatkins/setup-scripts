@@ -15,7 +15,7 @@ brew update
 
 # get all my mandatory apps from Homebrew
 # everything I need to get some serious work done the computer
-brew install altserver 1password 1password-cli discord alfred steam steamcmd iina git hiddenbar imageoptim microsoft-office android-platform-tools rbenv
+brew install altserver 1password 1password-cli discord alfred steam steamcmd iina git hiddenbar imageoptim microsoft-office android-platform-tools rbenv mas
 
 # why does Apple still ship an ancient version of git in the 2020s by default?!
 # anyways, config git really fast
@@ -28,7 +28,6 @@ git config --global core.editor "nano"
 # fun fact: if any of you reading this google "mac app store" alongside the id number, it'll tell you what they are!
 # for example, "mac app store 899247664" returns results for "TestFlight", which I use to beta test apps on iOS/macOS!
 # remember that if you're ever confused what something is (it's gonna happen)
-brew install mas
 mas install 497799835 899247664 1569813296 1436953057 1659154653 1508706541 2144121543 1463298887
 
 # get devkitpro
