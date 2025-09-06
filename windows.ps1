@@ -1,0 +1,1 @@
+winget install Spotify.Spotify AgileBits.1Password AgileBits.1Password.CLI Google.Chrome Valve.Steam EpicGames.EpicGamesLauncher GOG.Galaxy Roblox.Roblox Microsoft.Office Microsoft.PowerToys GitHub.GitHubDesktop Microsoft.VisualStudioCode goatcorp.XIVLauncher --accept-source-agreements
