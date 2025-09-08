@@ -10,9 +10,6 @@ Copy, paste, then run this command in **Terminal.app**. Keep in mind, it's setti
 
 This script requires [macOS Sonoma (14.x)](https://apps.apple.com/us/app/macos-sonoma/id6450717509?mt=12), macOS Sequoia (15.x), or macOS Tahoe (26.x). It should work fine on Intel Macs, but I've only tested on Apple silicon (M2 & M4).
 
-## Pop!_OS 22.04
-Coming soon.
-
 ## Windows 11
 Run the file in ``windows.ps1``, or simply copy/paste this into Windows Terminal:
 
@@ -21,3 +18,7 @@ irm https://setup.sladewatkins.com/win | iex
 ```
 
 **NOTE**: Windows 10 is not supported.
+
+
+## Pop!_OS 22.04 / 24.04
+Coming soon.
