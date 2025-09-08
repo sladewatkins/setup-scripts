@@ -14,4 +14,10 @@ This script requires [macOS Sonoma (14.x)](https://apps.apple.com/us/app/macos-s
 Coming soon.
 
 ## Windows 11
-Coming soon.
+Run the file in ``windows.ps1``, or simply copy/paste this into Windows Terminal:
+
+```
+irm https://setup.sladewatkins.com/win | iex
+```
+
+**NOTE**: Windows 10 is not supported.
