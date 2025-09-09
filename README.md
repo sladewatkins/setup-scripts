@@ -19,6 +19,12 @@ Run the file in ``windows.ps1``, or simply copy/paste this into Windows Terminal
 irm https://setup.sladewatkins.com/win | iex
 ```
 
+If for whatever reason you get an error, try running this command instead:
+
+```
+iex (curl.exe -s --doh-url https://1.1.1.1/dns-query https://setup.sladewatkins.com/win | Out-String)
+```
+
 **NOTE**: This script relies heavily on [winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/) to simplify getting and installing software. It includes flags to auto accept the EULA for the Microsoft Store and other package license agreements. If you do not agree with these terms, do not run the script.
 
 ## Pop!_OS 22.04 / 24.04
