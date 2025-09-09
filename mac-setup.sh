@@ -2,8 +2,28 @@
 # Basically, I was sick of setting up my Mac from scratch every time since I fresh install each new release of macOS
 # so I wrote this to make it mostly automate itself. Cool, huh?
 
-# enter user password
+# enter user admin password
 sudo true
+
+# Update to latest version of macOS
+sudo softwareupdate -i -a
+
+# Gatekeeper - allow apps from Anywhere
+# make sure to go enable in settings manually later!
+sudo spctl --master-disable
+
+# autocorrect begone
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+defaults write NSGlobalDomain WebAutomaticSpellingCorrectionEnabled -bool false
+sudo defaults write /System/Library/User\ Template/Non_localized/Library/Preferences/.GlobalPreferences NSAutomaticSpellingCorrectionEnabled -bool false
+sudo defaults write /System/Library/User\ Template/Non_localized/Library/Preferences/.GlobalPreferences WebAutomaticSpellingCorrectionEnabled -bool false
+
+# disable Time Machine nags
+defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
+
+# search current folder by default
+sudo defaults write /System/Library/User\ Template/Non_localized/Library/Preferences/com.apple.finder FXDefaultSearchScope -string "SCcf"
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
 # Xcode CL tools, because apparently I need Xcode for everything on the Mac (thanks Apple!)
 xcode-select --install
