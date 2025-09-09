@@ -2,6 +2,9 @@
 # Basically, I was sick of setting up my Mac from scratch every time since I fresh install each new release of macOS
 # so I wrote this to make it mostly automate itself. Cool, huh?
 
+# enter user password
+sudo true
+
 # Xcode CL tools, because apparently I need Xcode for everything on the Mac (thanks Apple!)
 xcode-select --install
 
