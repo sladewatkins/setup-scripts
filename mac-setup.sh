@@ -19,7 +19,7 @@ fi
 # update HomeBrew && get all my mandatory apps from it
 # everything I need to get some serious work done the computer
 
-brew update && brew install altserver 1password 1password-cli discord steam steamcmd iina git imageoptim microsoft-office android-platform-tools rbenv mas discord
+brew update && brew install altserver 1password 1password-cli discord steam steamcmd iina git imageoptim microsoft-office android-platform-tools rbenv mas obs discord
 
 # Mac App Store apps (install through MAS command line)
 # Future Slade, please make sure your Mac is logged into your Apple ID or some of these might fail (authentication for the paid apps)
