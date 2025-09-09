@@ -17,7 +17,7 @@ For OS X Mavericks capable computers (my 2011 27-inch iMac), I use the guide at 
 ## Windows 11
 **NOTICE**: I won't support this script for Windows 10. I only recommend running this on Windows 11 24H2 or later.
 
-Run the file in ``windows.ps1``, or simply copy/paste this into Windows Terminal:
+Run the ``windows.ps1`` file from File Explorer, or simply copy/paste this command into Windows Terminal to make things easier:
 
 ```
 irm https://setup.sladewatkins.com/win | iex
