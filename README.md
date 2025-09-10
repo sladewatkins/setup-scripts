@@ -2,6 +2,11 @@
 I use these to automate the [setup of my computers](https://setup.sladewatkins.com/about) and get running within a few minutes, because I was tired of having to download a trillion things separately. These are dependent on its operating system (usually Linux or macOS), and as such, are quite literally tailored towards me. I wouldn't recommend using them for your own systems (unless you modify them for yourself, of course, or really feel like being *me* today for some reason.)
 
 ## macOS (Sonoma and later)
+
+### Prerequisites 
+- An Intel or Apple silicon based Mac running macOS Sonoma or later. There is now a check for Apple silicon that will auto-install Rosetta 2 and Silicon Info (which is great for knowing when to blame Rosetta 2 for awful performance!)
+- At least 20GB of free space on your drive. We're going to eat a good chunk of it with app installs (mostly Xcode and build caches!)
+
 Copy, paste, then run this command in **Terminal.app**. Keep in mind, it's setting up the Terminal and all apps on the system to act like me, not you. I would actually recommend you fork this repo and change the scripts yourself first.
 
 ```
@@ -11,6 +16,10 @@ Copy, paste, then run this command in **Terminal.app**. Keep in mind, it's setti
 This script requires [macOS Sonoma (14.x)](https://apps.apple.com/us/app/macos-sonoma/id6450717509?mt=12), macOS Sequoia (15.x), or macOS Tahoe (26.x). It should work fine on Intel Macs, but I've only tested on Apple silicon (M2 & M4).
 
 ## OS X Mavericks
+
+### Prerequisites 
+- Needs to be a Mavericks-era Mac or Hackintosh.
+- Do not expect miracles.
 
 For OS X Mavericks capable computers (my 2011 27-inch iMac), I mostly use the guide at [https://www.mavericksforever.com](https://www.mavericksforever.com) to make OS X Mavericks (10.9) usable in the modern era. It's surprisingly pleasant, even in the 2020s!
 
