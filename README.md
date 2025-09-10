@@ -24,7 +24,13 @@ curl setup.sladewatkins.com/mav | sh
 ## Windows 11
 **NOTICE**: I won't support this script for Windows 10. I only recommend running this on Windows 11 24H2 or later.
 
+### Prerequisites
+- Windows 11 24H2 or later (Insider builds, with the exception of Canary channel, are probably fine)
+- CPU Virtualization must be enabled for Intel (VMX/Intel VT-x) or AMD (AMD-V/SVM). You can do this in BIOS, consult your manufacturer's manual for more information.
+- Plug laptops or 2-in-1s into power. Trust me.
+
 Run the ``windows.ps1`` file from File Explorer, or simply copy/paste this command into Windows Terminal to make things easier:
+
 
 ```
 irm https://setup.sladewatkins.com/win | iex
