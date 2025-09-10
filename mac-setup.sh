@@ -11,12 +11,18 @@ defaults write com.apple.dock autohide-delay -float 0
 defaults write com.apple.dock autohide-time-modifier -int 0
 killall Dock
 
+# Homebrew, because practically everything is on there that you need
+if test ! $(which brew); then
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+
 # install Rosetta 2 for Apple silicon computers (games need it)
 if [[ "$(uname -m)" == "arm64" ]]; then
-  echo "This is an Apple silicon machine, installing Rosetta 2 now."
+  echo "This is an Apple silicon machine, installing Rosetta 2 and Silicon Info now."
   softwareupdate --install-rosetta --agree-to-license
+  brew install silicon-info
 else
-  echo "This is not an Apple silicon Mac, skipping Rosetta 2 installation."
+  echo "This is not an Apple silicon Mac, skipping Rosetta 2 and Silicon Info installation."
 fi
 
 # Update to latest version of macOS
@@ -47,11 +53,6 @@ xcode-select --install
 git config --global user.name "Slade Watkins"
 git config --global user.email srw@sladewatkins.net
 git config --global core.editor "nano"
-
-# Homebrew, because practically everything is on there that you need
-if test ! $(which brew); then
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-fi
 
 # update HomeBrew && get all my mandatory apps from it
 # everything I need to get some serious work done the computer
