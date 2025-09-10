@@ -13,4 +13,5 @@ defaults write com.apple.dock autohide-delay -float 0
 defaults write com.apple.dock autohide-time-modifier -int 0
 killall Dock
 
-echo "Done! NOW you can enjoy Mavericks!"
+echo "Rebooting your computer so that you can enjoy Mavericks!"
+sudo shutdown -r now
