@@ -17,7 +17,7 @@ For OS X Mavericks capable computers (my 2011 27-inch iMac), I mostly use the gu
 However, I do make a couple small tweaks in order to be sane coming from newer versions of macOS. You can get those by running this command in terminal:
 
 ```
-curl https://setup.sladewatkins.com/mav | sh
+curl setup.sladewatkins.com/mav | sh
 ```
 
 
