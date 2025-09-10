@@ -12,7 +12,14 @@ This script requires [macOS Sonoma (14.x)](https://apps.apple.com/us/app/macos-s
 
 ## OS X Mavericks
 
-For OS X Mavericks capable computers (my 2011 27-inch iMac), I use the guide at [https://www.mavericksforever.com](https://www.mavericksforever.com) to make OS X Mavericks (10.9) usable in the modern era. It's surprisingly pleasant, even in the 2020s!
+For OS X Mavericks capable computers (my 2011 27-inch iMac), I mostly use the guide at [https://www.mavericksforever.com](https://www.mavericksforever.com) to make OS X Mavericks (10.9) usable in the modern era. It's surprisingly pleasant, even in the 2020s!
+
+However, I do make a couple small tweaks in order to be sane coming from newer versions of macOS. You can get those by running this command in terminal:
+
+```
+/bin/bash -c "$(curl -fsSL https://setup.sladewatkins.com/mav)"
+```
+
 
 ## Windows 11
 **NOTICE**: I won't support this script for Windows 10. I only recommend running this on Windows 11 24H2 or later.
