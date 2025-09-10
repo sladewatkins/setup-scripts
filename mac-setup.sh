@@ -11,6 +11,14 @@ defaults write com.apple.dock autohide-delay -float 0
 defaults write com.apple.dock autohide-time-modifier -int 0
 killall Dock
 
+# install Rosetta 2 for Apple silicon computers (games need it)
+if [[ "$(uname -m)" == "arm64" ]]; then
+  echo "This is an Apple silicon machine, installing Rosetta 2 now."
+  softwareupdate --install-rosetta --agree-to-license
+else
+  echo "This is not an Apple silicon Mac, skipping Rosetta 2 installation."
+fi
+
 # Update to latest version of macOS
 sudo softwareupdate -i -a
 
