@@ -49,6 +49,10 @@ fi
 # everything I need to get some serious work done the computer
 
 brew update && brew install altserver 1password 1password-cli discord steam steamcmd iina git imageoptim microsoft-office android-platform-tools rbenv mas obs
+brew tap nextfire/tap
+brew install apple-music-discord-rpc
+brew services restart apple-music-discord-rpc
+brew services start nextfire/tap/apple-music-discord-rpc
 
 # Mac App Store apps (install through MAS command line)
 # Future Slade, please make sure your Mac is logged into your Apple ID or some of these might fail (authentication for the paid apps)
