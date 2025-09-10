@@ -25,9 +25,6 @@ else
   echo "This is not an Apple silicon Mac, skipping Rosetta 2 and Silicon Info installation."
 fi
 
-# Update to latest version of macOS
-sudo softwareupdate -i -a
-
 # Gatekeeper - allow apps from Anywhere
 # make sure to go enable in settings manually later!
 sudo spctl --master-disable
@@ -69,3 +66,8 @@ brew services start nextfire/tap/apple-music-discord-rpc
 # for example, "mac app store 899247664" returns results for "TestFlight", which I use to beta test apps on iOS/macOS!
 # remember that if you're ever confused what something is (it's gonna happen)
 mas install 497799835 899247664 1569813296 1436953057 1659154653 1508706541 2144121543 1463298887
+
+# Make sure you're on the latest version of macOS and have ALL updates
+sudo softwareupdate -i -a
+
+sudo shutdown -r now 
