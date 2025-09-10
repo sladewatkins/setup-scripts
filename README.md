@@ -7,6 +7,12 @@ I use these to automate the [setup of my computers](https://setup.sladewatkins.c
 - An Intel or Apple silicon based Mac running macOS Sonoma or later. There is now a check for Apple silicon that will auto-install Rosetta 2 and Silicon Info (which is great for knowing when to blame Rosetta 2 for awful performance!)
 - At least 20GB of free space on your drive. We're going to eat a good chunk of it with app installs (mostly Xcode and build caches!)
 
+I am going to go ahead and recommend you update to the latest version of macOS for your machine before starting (command is below). This isn't strictly necessary, but prevents any app incompatibilities and ensures you have all security fixes needed for browsing the modern web. If you'd like to opt out of this, note that **the script includes this at the end before the final restart command is issued**. You should fork the script and remove the command you see below.
+
+```
+sudo softwareupdate -i -a
+```
+
 Copy, paste, then run this command in **Terminal.app**. Keep in mind, it's setting up the Terminal and all apps on the system to act like me, not you. I would actually recommend you fork this repo and change the scripts yourself first.
 
 ```
