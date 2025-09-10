@@ -5,6 +5,12 @@
 # enter user admin password
 sudo true
 
+# set dock to left-align and auto-hide with instant reveal
+defaults write com.apple.dock orientation -string left
+defaults write com.apple.dock autohide-delay -float 0
+defaults write com.apple.dock autohide-time-modifier -int 0
+killall Dock
+
 # Update to latest version of macOS
 sudo softwareupdate -i -a
 
