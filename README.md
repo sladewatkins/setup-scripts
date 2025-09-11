@@ -41,6 +41,7 @@ curl setup.sladewatkins.com/mav | sh
 
 ### Prerequisites
 - Windows 11 24H2 or later (Insider builds, with the exception of Canary channel, are probably fine)
+- Pro Edition or higher. Home Edition is not supported by this script (for now)
 - CPU Virtualization must be enabled for Intel (VMX/Intel VT-x) or AMD (AMD-V/SVM). You can do this in BIOS, consult your manufacturer's manual for more information.
 - Plug laptops or 2-in-1s into power. Trust me.
 
