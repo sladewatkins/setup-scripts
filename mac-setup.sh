@@ -58,11 +58,6 @@ sudo defaults write /System/Library/User\ Template/Non_localized/Library/Prefere
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 echo "Finder will now search the current folder by default."
 
-# Xcode CL tools, because apparently I need Xcode for everything on the Mac (thanks Apple!)
-echo "Now installing Xcode Command Line Tools..."
-xcode-select --install
-echo "Xcode Command Line Tools are now installed." 
-
 # why does Apple still ship an ancient version of git in the 2020s by default?!
 # anyways, config git really fast
 echo "Configuring git with user name, email, and editor now."
