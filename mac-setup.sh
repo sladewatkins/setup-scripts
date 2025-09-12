@@ -69,7 +69,7 @@ echo "Configured git."
 # update HomeBrew && get all my mandatory apps from it
 # everything I need to get some serious work done the computer
 echo "Now updating Homebrew and installing applications."
-brew update && brew install altserver 1password 1password-cli discord steam steamcmd iina git imageoptim microsoft-office android-platform-tools rbenv mas obs
+brew update && brew install altserver 1password 1password-cli discord steam steamcmd iina git imageoptim microsoft-office android-platform-tools rbenv mas obs roblox
 brew tap nextfire/tap
 brew install apple-music-discord-rpc
 brew services restart apple-music-discord-rpc
