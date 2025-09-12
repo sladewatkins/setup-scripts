@@ -22,6 +22,8 @@ echo "Checking if Homebrew is installed..."
 if test ! $(which brew); then
   echo "Homebrew is not installed. Running installer..."
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+else
+  echo "Homebrew is installed, skipping this step."
 fi
 
 # install Rosetta 2 for Apple silicon computers (games need it)
