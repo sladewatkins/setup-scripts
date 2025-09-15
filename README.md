@@ -24,7 +24,7 @@ This script requires [macOS Sonoma (14.x)](https://apps.apple.com/us/app/macos-s
 ## OS X Mavericks
 
 ### Prerequisites 
-- Needs to be a Mavericks-era Mac or Hackintosh.
+- Needs to be a [Mavericks-era Mac](https://support.apple.com/en-us/112560) or Hackintosh.
 - Do not expect miracles.
 
 For OS X Mavericks capable computers (my 2011 27-inch iMac), I mostly use the guide at [https://www.mavericksforever.com](https://www.mavericksforever.com) to make OS X Mavericks (10.9) usable in the modern era. It's surprisingly pleasant, even in the 2020s!
