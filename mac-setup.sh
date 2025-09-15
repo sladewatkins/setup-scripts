@@ -8,7 +8,6 @@ sudo true
 # Install Xcode Command Line Tools (plus accept license)
 echo "Getting Xcode Command Line Tools and accepting license..."
 sudo xcode-select --install
-sudo xcodebuild -license
 
 # set dock to left-align and auto-hide with instant reveal
 echo "Setting dock to left side of screen and turning on auto-hide with instant reveal..."
