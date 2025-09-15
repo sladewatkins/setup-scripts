@@ -4,4 +4,5 @@ winget install AgileBits.1Password AgileBits.1Password.CLI Google.Chrome Valve.S
 Start-Process "https://cdn.cider.sh/winget/cider-v3.1.0-windows-x64.exe"
 Start-Process "https://github.com/sorayuki/obs-multi-rtmp/releases/download/0.7.3/obs-multi-rtmp-0.7.3.0-windows-x64-Installer.exe"
 irm https://raw.githubusercontent.com/emilwojcik93/Install-NvidiaApp/refs/heads/main/Install-NvidiaApp.ps1 | iex
-Restart-Computer
+Write-Host "All done! The computer will restart in 15 seconds to apply all settings. You will want to open the NVIDIA app when it does."
+Restart-Computer -Timeout 15
