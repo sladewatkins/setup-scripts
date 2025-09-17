@@ -84,7 +84,7 @@ echo "Homebrew has been updated and applications are installed."
 # for example, "mac app store 899247664" returns results for "TestFlight", which I use to beta test apps on iOS/macOS!
 # remember that if you're ever confused what something is (it's gonna happen)
 echo "Installing apps from the Mac App Store."
-mas install 497799835 899247664 1569813296 1436953057 1659154653 1508706541 2144121543 1463298887
+mas install 497799835 899247664 1569813296 1436953057 1659154653 1508706541 2144121543 1463298887 1435957248
 echo "All apps from the Mac App Store have been installed..."
 
 # Make sure you're on the latest version of macOS and have ALL updates
