@@ -43,6 +43,7 @@ curl setup.sladewatkins.com/mav | sh
 - Windows 11 24H2 or later (Insider builds, with the exception of Canary channel, are probably fine)
 - Pro Edition or higher. Home Edition is not supported by this script (for now)
 - CPU Virtualization must be enabled for Intel (VMX/Intel VT-x) or AMD (AMD-V/SVM). You can do this in BIOS, consult your manufacturer's manual for more information.
+- NVIDIA graphics card, because the script installs the NVIDIA app by default (since I only have NVIDIA-based Windows computers)
 - Plug laptops or 2-in-1s into power. Trust me.
 
 Run the ``windows.ps1`` file from File Explorer, or simply copy/paste this command into [Windows Terminal](https://github.com/microsoft/terminal) to make things easier:
