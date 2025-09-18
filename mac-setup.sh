@@ -47,7 +47,7 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 defaults write NSGlobalDomain WebAutomaticSpellingCorrectionEnabled -bool false
 sudo defaults write /System/Library/User\ Template/Non_localized/Library/Preferences/.GlobalPreferences NSAutomaticSpellingCorrectionEnabled -bool false
 sudo defaults write /System/Library/User\ Template/Non_localized/Library/Preferences/.GlobalPreferences WebAutomaticSpellingCorrectionEnabled -bool false
-echo "Autocorrect disabled."
+echo "Autocorrect should now be disabled."
 
 # disable Time Machine nags
 echo "Disabling nags to enable Time Machine backups of this machine."
