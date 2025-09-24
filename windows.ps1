@@ -1,7 +1,7 @@
 Write-Host "Removing Microsoft Edge and instaling Edge WebView."
 iex "&{$(irm https://cdn.jsdelivr.net/gh/he3als/EdgeRemover@main/get.ps1)} -UninstallEdge -RemoveEdgeData -InstallWebView"
 Write-Host "Installing applications..."
-winget install AgileBits.1Password AgileBits.1Password.CLI Google.Chrome Valve.Steam Valve.SteamCMD EpicGames.EpicGamesLauncher GOG.Galaxy Roblox.Roblox Microsoft.Office Microsoft.PowerToys GitHub.GitHubDesktop Git.Git Notepad++.Notepad++ goatcorp.XIVLauncher Ookla.Speedtest.CLI Ookla.Speedtest.Desktop OBSProject.OBSStudio ChatterinoTeam.Chatterino ShareX.ShareX REALiX.HWiNFO 9NM4T8B9JQZ1 Microsoft.WindowsTerminal --accept-package-agreements --accept-source-agreements
+winget install AgileBits.1Password AgileBits.1Password.CLI Google.Chrome Valve.Steam Valve.SteamCMD EpicGames.EpicGamesLauncher GOG.Galaxy Microsoft.Office Microsoft.PowerToys GitHub.GitHubDesktop Git.Git Notepad++.Notepad++ goatcorp.XIVLauncher Ookla.Speedtest.CLI Ookla.Speedtest.Desktop OBSProject.OBSStudio ChatterinoTeam.Chatterino ShareX.ShareX REALiX.HWiNFO 9NM4T8B9JQZ1 Microsoft.WindowsTerminal 7zip.7zip --accept-package-agreements --accept-source-agreements
 Start-Process "https://cdn.cider.sh/winget/cider-v3.1.0-windows-x64.exe"
 Start-Process "https://github.com/sorayuki/obs-multi-rtmp/releases/download/0.7.3/obs-multi-rtmp-0.7.3.0-windows-x64-Installer.exe"
 irm https://raw.githubusercontent.com/emilwojcik93/Install-NvidiaApp/refs/heads/main/Install-NvidiaApp.ps1 | iex
