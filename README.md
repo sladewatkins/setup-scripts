@@ -1,7 +1,7 @@
 # Setup Scripts
 I use these to automate the [setup of my computers](https://setup.sladewatkins.com/about) and get running within a few minutes, because I was tired of having to download a trillion things separately. These are dependent on its operating system (usually Linux or macOS), and as such, are quite literally tailored towards me. I wouldn't recommend using them for your own systems (unless you modify them for yourself, of course, or really feel like being *me* today for some reason.)
 
-## macOS (Sonoma and later)
+## macOS (Sequoia 15.x and Tahoe 26.x)
 
 ### Prerequisites 
 - An Intel or Apple silicon based Mac running macOS Sonoma or later. There is now a check for Apple silicon that will auto-install [Rosetta 2](https://developer.apple.com/documentation/apple-silicon/about-the-rosetta-translation-environment) and Silicon Info (which is great for knowing when to blame Rosetta 2 for awful performance!)
@@ -19,7 +19,7 @@ Copy, paste, then run this command in **Terminal.app**. Keep in mind, it's setti
 /bin/bash -c "$(curl -fsSL https://setup.sladewatkins.com/mac)"
 ```
 
-This script requires [macOS Sonoma (14.x)](https://apps.apple.com/us/app/macos-sonoma/id6450717509?mt=12), macOS Sequoia (15.x), or macOS Tahoe (26.x). It should work fine on Intel Macs, but I've only tested on Apple silicon (M2 & M4).
+This script requires [macOS Sequoia](https://apps.apple.com/us/app/macos-sonoma/id6450717509?mt=12) (15.x) or [macOS Tahoe](https://support.apple.com/en-us/102662) (26.x). It should work fine on Intel Macs, but I've only tested on Apple silicon (M2 & M4).
 
 ## OS X Mavericks
 
