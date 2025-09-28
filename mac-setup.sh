@@ -64,7 +64,7 @@ echo "Finder will now search the current folder by default."
 # anyways, config git really fast
 echo "Configuring git with user name, email, and editor now."
 git config --global user.name "Slade Watkins"
-git config --global user.email srw@sladewatkins.net
+git config --global user.email git@sladewatkins.com
 git config --global core.editor "nano"
 echo "Configured git."
 
