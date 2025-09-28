@@ -88,7 +88,7 @@ mas install 497799835 899247664 1569813296 1436953057 1659154653 1508706541 2144
 echo "All apps from the Mac App Store have been installed..."
 
 # Make sure you're on the latest version of macOS and have ALL updates
-echo "Now updating macOS to the latest version available for this machine..."
+echo "Now updating macOS to the latest version available for this machine... BEWARE - after this step completes, the script will auto-restart the computer!"
 sudo softwareupdate -i -a
 
 echo "Updates complete. Rebooting now."
