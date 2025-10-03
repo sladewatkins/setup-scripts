@@ -11,5 +11,5 @@ echo "Getting Xcode Command Line Tools and accepting license..."
 sudo xcode-select --install
 sudo xcodebuild -license
 
-echo "Rebooting your computer so that you can enjoy Mavericks!"
+echo "Rebooting your computer so that you can enjoy Mavericks forever!"
 sudo shutdown -r now
