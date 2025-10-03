@@ -14,6 +14,7 @@ echo "Setting dock to left side of screen and turning on auto-hide with instant 
 defaults write com.apple.dock orientation -string left
 defaults write com.apple.dock autohide-delay -float 0
 defaults write com.apple.dock autohide-time-modifier -int 0
+defaults write com.apple.dock autohide -int 1
 killall Dock
 echo "Applied Dock settings."
 
