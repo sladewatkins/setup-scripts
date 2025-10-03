@@ -5,6 +5,13 @@
 # enter user admin password
 sudo true
 
+# configure git
+echo "Configuring git with user name, email, and editor now."
+git config --global user.name "Slade Watkins"
+git config --global user.email git@sladewatkins.com
+git config --global core.editor "nano"
+echo "Configured git."
+
 # set dock to left-align and auto-hide with instant reveal
 echo "Setting dock to left side of screen and turning on auto-hide with instant reveal..."
 defaults write com.apple.dock orientation -string left
@@ -58,14 +65,6 @@ echo "Setting Finder to search the current folder by default..."
 sudo defaults write /System/Library/User\ Template/Non_localized/Library/Preferences/com.apple.finder FXDefaultSearchScope -string "SCcf"
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 echo "Finder will now search the current folder by default."
-
-# why does Apple still ship an ancient version of git in the 2020s by default?!
-# anyways, config git really fast
-echo "Configuring git with user name, email, and editor now."
-git config --global user.name "Slade Watkins"
-git config --global user.email git@sladewatkins.com
-git config --global core.editor "nano"
-echo "Configured git."
 
 # update HomeBrew && get all my mandatory apps from it
 # everything I need to get some serious work done the computer
