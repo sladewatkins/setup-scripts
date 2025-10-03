@@ -15,6 +15,8 @@ sudo softwareupdate -i -a
 
 Copy, paste, then run this command in **Terminal.app**. Keep in mind, it's setting up the Terminal and all apps on the system to act like me, not you. I would actually recommend you fork this repo and change the scripts yourself first.
 
+NOTE: After the script installs Homebrew, you may need to rerun the script again. Push up on the keyboard a couple times until you see it again, or just CMD+V the script address below. Should come right back and eventually continue where it left off!
+
 ```
 /bin/bash -c "$(curl -fsSL https://setup.sladewatkins.com/mac)"
 ```
