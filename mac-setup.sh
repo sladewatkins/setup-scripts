@@ -55,7 +55,7 @@ defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 echo "Time Machine nags are now disabled."
 
 # search current folder by default
-echo "Setting Finder to seearch the current folder by default..."
+echo "Setting Finder to search the current folder by default..."
 sudo defaults write /System/Library/User\ Template/Non_localized/Library/Preferences/com.apple.finder FXDefaultSearchScope -string "SCcf"
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 echo "Finder will now search the current folder by default."
