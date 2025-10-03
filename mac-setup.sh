@@ -89,5 +89,5 @@ echo "All apps from the Mac App Store have been installed..."
 echo "Now updating macOS to the latest version available for this machine... BEWARE - after this step completes, the script will auto-restart the computer!"
 sudo softwareupdate -i -a
 
-echo "Updates complete. Rebooting now."
-sudo shutdown -r now 
+echo "Updates complete. Rebooting in 15 seconds."
+sudo shutdown -h +0.25
