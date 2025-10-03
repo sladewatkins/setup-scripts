@@ -61,7 +61,12 @@ If for whatever reason you get an error, try running this command instead:
 iex (curl.exe -s --doh-url https://1.1.1.1/dns-query https://setup.sladewatkins.com/win | Out-String)
 ```
 
-If you do not have Windows Terminal (should be included on Windows 11), [download it here](https://github.com/microsoft/terminal/releases).
+If you do not have Windows Terminal (should be included on Windows 11), [download it here](https://github.com/microsoft/terminal/releases) or run the following command in Powershell:
+```
+winget install Microsoft.WindowsTerminal
+```
+
+Trust me, you don't want to be using the Powershell or Command Prompt naked in 2025. Terminal is so much nicer.
 
 **NOTE**: This script relies heavily on [winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/) to simplify getting and installing software. It includes flags to auto accept the EULA for the Microsoft Store and other package license agreements. If you do not agree with these terms, do not run the script.
 
