@@ -19,7 +19,5 @@ if (Get-WmiObject Win32_VideoController | Where-Object { $_.Name -like "*AMD*" }
 } else {
     Write-Host "AMD graphics card not detected. Skipping..."
 }
-Write-Host "Now installing WSL - Ubuntu 24.04!"
-wsl --install --distribution Ubuntu-24.04
 Write-Host "All done! The computer will restart in 15 seconds to apply all settings. If you installed any drivers, NVIDIA or AMD, note that you'll HAVE to open their respective apps to check for updates and configure settings!"
 Restart-Computer -Timeout 15
