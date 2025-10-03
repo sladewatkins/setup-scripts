@@ -22,6 +22,8 @@ echo "Checking if Homebrew is installed..."
 if test ! $(which brew); then
   echo "Homebrew is not installed. Running installer..."
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+  eval "$(/opt/homebrew/bin/brew shellenv)"
 else
   echo "Homebrew is installed, skipping this step."
 fi
