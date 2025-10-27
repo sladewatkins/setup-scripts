@@ -18,7 +18,7 @@ Copy, paste, then run this command in **Terminal.app**. Keep in mind, it's setti
 NOTE: After the script installs Homebrew, you may need to rerun the script again. Push up on the keyboard a couple times until you see it again, or just CMD+V the script address below. Should come right back and eventually continue where it left off!
 
 ```
-/bin/bash -c "$(curl -fsSL https://setup.sladewatkins.com/mac)"
+/bin/bash -c "$(curl -fsSL https://slade.link/setup-mac)"
 ```
 
 This script requires [macOS Sequoia](https://apps.apple.com/us/app/macos-sonoma/id6450717509?mt=12) (15.x) or [macOS Tahoe](https://support.apple.com/en-us/102662) (26.x). It should work fine on Intel Macs, but I've only tested on Apple silicon (M2 & M4).
@@ -34,7 +34,7 @@ For OS X Mavericks capable computers (my 2011 27-inch iMac), I mostly use the gu
 However, I do make a couple small tweaks in order to be sane coming from newer versions of macOS. You can get those by running this command in terminal:
 
 ```
-curl setup.sladewatkins.com/mav | sh
+curl slade.link/setup-mav | sh
 ```
 
 
@@ -52,13 +52,13 @@ Run the ``windows.ps1`` file from File Explorer, or simply copy/paste this comma
 
 
 ```
-irm https://setup.sladewatkins.com/win | iex
+irm https://slade.link/setup-win | iex
 ```
 
 If for whatever reason you get an error, try running this command instead:
 
 ```
-iex (curl.exe -s --doh-url https://1.1.1.1/dns-query https://setup.sladewatkins.com/win | Out-String)
+iex (curl.exe -s --doh-url https://1.1.1.1/dns-query https://slade.link/setup-win | Out-String)
 ```
 
 If you do not have Windows Terminal (should be included on Windows 11), [download it here](https://github.com/microsoft/terminal/releases) or run the following command in Powershell:
