@@ -22,7 +22,12 @@ git config --global core.editor "nano"
 # I don't declare a key here, because 1Password handles that.
 git config --global gpg.format ssh
 git config --global commit.gpgsign true
-echo "Configured git."
+git config --global sendemail.smtpserver 'smtp.gmail.com'
+git config --global sendemail.smtpuser 'you@gmail.com'
+git config --global sendemail.smtpPass 'na'
+git config --global sendemail.smtpencryption 'ssl'
+git config --global sendemail.smtpserverport '465'
+echo "Configured git, with the exception of send-email username and password. Please configure those in the config file."
 
 # Homebrew, because practically everything is on there that you need
 echo "Checking if Homebrew is installed..."
