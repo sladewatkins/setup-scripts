@@ -17,7 +17,7 @@ echo "Applied Dock settings."
 # configure git
 echo "Configuring git with user name, email, and editor now."
 git config --global user.name "Slade Watkins"
-git config --global user.email git@sladewatkins.com
+git config --global user.email sr@sladewatkins.com
 git config --global core.editor "nano"
 # I don't declare a key here, because 1Password handles that.
 git config --global gpg.format ssh
