@@ -1,5 +1,5 @@
 # Setup Scripts
-I use these to automate the [setup of my computers](https://setup.sladewatkins.com/about) and get running within a few minutes, because I was tired of having to download a trillion things separately. These are dependent on its operating system (usually Linux or macOS), and as such, are quite literally tailored towards me. I wouldn't recommend using them for your own systems (unless you modify them for yourself, of course, or really feel like being *me* today for some reason.)
+I use these to automate the [setup of my computers](https://slade.link/setup) and get running within a few minutes, because I was tired of having to download a trillion things separately. These are dependent on its operating system (usually Linux or macOS), and as such, are quite literally tailored towards me. I wouldn't recommend using them for your own systems (unless you modify them for yourself, of course, or really feel like being *me* today for some reason.)
 
 ## macOS (Sequoia 15.x and Tahoe 26.x)
 
