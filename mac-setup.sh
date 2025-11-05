@@ -5,6 +5,9 @@
 # enter user admin password
 sudo true
 
+# install xcode-select
+sudo xcode-select --install
+
 # configure git
 echo "Configuring git with user name, email, and editor now."
 git config --global user.name "Slade Watkins"
