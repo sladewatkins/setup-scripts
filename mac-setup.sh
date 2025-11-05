@@ -5,15 +5,6 @@
 # enter user admin password
 sudo true
 
-# set dock to left-align and auto-hide with instant reveal
-echo "Setting dock to left side of screen and turning on auto-hide with instant reveal..."
-defaults write com.apple.dock orientation -string left
-defaults write com.apple.dock autohide-delay -float 0
-defaults write com.apple.dock autohide-time-modifier -int 0
-defaults write com.apple.dock autohide -int 1
-killall Dock
-echo "Applied Dock settings."
-
 # configure git
 echo "Configuring git with user name, email, and editor now."
 git config --global user.name "Slade Watkins"
