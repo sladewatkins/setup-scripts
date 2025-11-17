@@ -14,7 +14,7 @@ if (Get-WmiObject Win32_VideoController | Where-Object { $_.Name -like "*NVIDIA*
 if (Get-WmiObject Win32_VideoController | Where-Object { $_.Name -like "*AMD*" }) {
     Write-Host "An AMD graphics card was detected. Navigating to AMD Software Adrenalin Edition download page..."
     
-    Start-Process "https://drivers.amd.com/drivers/whql-amd-software-adrenalin-edition-25.10.2-win10-win11-oct-rdna3.exe"
+    Start-Process "https://www.amd.com/en/support/download/drivers.html"
     
 } else {
     Write-Host "AMD graphics card not detected. Skipping..."
