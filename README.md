@@ -58,7 +58,7 @@ irm https://raw.githubusercontent.com/sladewatkins/setup-scripts/HEAD/windows.ps
 If for whatever reason you get an error, try running this command instead:
 
 ```
-iex (curl.exe -s --doh-url https://1.1.1.1/dns-query https://slade.link/setup-win | Out-String)
+iex (curl.exe -s --doh-url https://1.1.1.1/dns-query https://raw.githubusercontent.com/sladewatkins/setup-scripts/HEAD/windows.ps1 | Out-String)
 ```
 
 If you do not have Windows Terminal (should be included on Windows 11), [download it here](https://github.com/microsoft/terminal/releases) or run the following command in Powershell:
