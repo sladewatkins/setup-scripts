@@ -52,7 +52,7 @@ Run the ``windows.ps1`` file from File Explorer, or simply copy/paste this comma
 
 
 ```
-irm https://slade.link/setup-win | iex
+irm https://raw.githubusercontent.com/sladewatkins/setup-scripts/HEAD/windows.ps1 | iex
 ```
 
 If for whatever reason you get an error, try running this command instead:
