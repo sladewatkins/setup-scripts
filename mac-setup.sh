@@ -3,9 +3,11 @@
 # so I wrote this to make it mostly automate itself. Cool, huh?
 
 # enter user admin password
+echo "This script is about to ask for your admin password. Please provide it so it doesn't have to nag for it later."
 sudo true
 
 # install xcode-select
+echo "Installing Xcode Command Line Tools (these are important for later.)"
 sudo xcode-select --install
 
 # configure git
