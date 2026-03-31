@@ -37,8 +37,10 @@ else
 fi
 
 # install Rosetta 2 for Apple silicon computers (games need it)
+# This will be removed from this install script with macOS 28, as Rosetta 2 will be.
 if [[ "$(uname -m)" == "arm64" ]]; then
   echo "This is an Apple silicon Mac, installing Rosetta 2 and Silicon Info now."
+  echo "Note: this will be removed from this install script with macOS 28, as Rosetta 2 will be."
   sudo softwareupdate --install-rosetta --agree-to-license
   brew install silicon-info
 else
