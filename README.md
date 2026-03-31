@@ -1,9 +1,12 @@
 # Setup Scripts
 I use these to automate the [setup of my computers](https://slade.link/setup) and get running within a few minutes, because I was tired of having to download a trillion things separately. These are dependent on its operating system (usually Linux or macOS), and as such, are quite literally tailored towards me. I wouldn't recommend using them for your own systems (unless you modify them for yourself, of course, or really feel like being *me* today for some reason.)
 
-## macOS (Tahoe 26.x)
+## Macs
+I use Macs as my primary daily driver computers, because I find them extremely reliable, especially as they get older. Heck, I've even given my parents my old M2 MacBook Pro and they seem to enjoy it!
 
-### Prerequisites 
+### macOS (Tahoe 26.x)
+
+#### Prerequisites 
 - An Intel or Apple silicon based Mac running macOS Sonoma or later. There is now a check for Apple silicon that will auto-install [Rosetta 2](https://developer.apple.com/documentation/apple-silicon/about-the-rosetta-translation-environment) and Silicon Info (which is great for knowing when to blame Rosetta 2 for awful performance!)
 - At least 20GB of free space on your drive. We're going to eat a good chunk of it with app installs (mostly Xcode and build caches!)
 
@@ -21,11 +24,11 @@ NOTE: After the script installs Homebrew, you may need to rerun the script again
 /bin/bash -c "$(curl -fsSL https://slade.link/setup-mac)"
 ```
 
-This script requires [macOS Tahoe](https://support.apple.com/en-us/102662) (26.x). It should work fine on Intel Macs, but I've only tested on Apple silicon (M2 & M4, M4 Pro, and M4 Max).
+This script requires [macOS Tahoe](https://support.apple.com/en-us/102662) (26.x). It should work fine on Intel Macs, but I've only tested on Apple silicon (M2 & M4, M4 Pro, and M4 Max). (**Note:** Apple plans to sunset Intel Mac support with this release. For my own purposes, I will be splitting the setup script off into a separate ``mac-intel-tahoe.sh`` file when macOS 27 releases as a Developer Beta in June.)
 
-## OS X Mavericks
+### OS X Mavericks
 
-### Prerequisites 
+#### Prerequisites 
 - Needs to be a [Mavericks-era Mac](https://support.apple.com/en-us/112560) or Hackintosh.
 - Do not expect miracles.
 
@@ -36,7 +39,6 @@ However, I do make a couple small tweaks in order to be sane coming from newer v
 ```
 curl slade.link/setup-mav | sh
 ```
-
 
 ## Windows 11
 **NOTICE**: I won't support this script for Windows 10. I only recommend running this on Windows 11 24H2 or later.
