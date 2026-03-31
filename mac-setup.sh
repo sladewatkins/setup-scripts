@@ -72,10 +72,10 @@ sudo defaults write /System/Library/User\ Template/Non_localized/Library/Prefere
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 echo "Finder will now search the current folder by default."
 
-# update HomeBrew && get all my mandatory apps from it
+# update Homebrew && get all my mandatory apps from it
 # everything I need to get some serious work done the computer
 echo "Now updating Homebrew and installing applications."
-brew update && brew install altserver 1password 1password-cli discord steam steamcmd prismlauncher iina git imageoptim microsoft-office android-platform-tools rbenv mas obs roblox dolphin coconutbattery alacritty
+brew update && brew install altserver 1password 1password-cli discord spotify steam steamcmd prismlauncher iina git imageoptim microsoft-office android-platform-tools rbenv mas obs roblox dolphin coconutbattery alacritty
 brew tap nextfire/tap
 brew install apple-music-discord-rpc
 brew services restart apple-music-discord-rpc
