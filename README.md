@@ -6,9 +6,15 @@ I use Macs as my primary daily driver computers, because I find them extremely r
 
 ### macOS (Tahoe 26.x)
 
-#### Prerequisites 
-- An Intel or Apple silicon based Mac running macOS Sonoma or later. There is now a check for Apple silicon that will auto-install [Rosetta 2](https://developer.apple.com/documentation/apple-silicon/about-the-rosetta-translation-environment) and Silicon Info (which is great for knowing when to blame Rosetta 2 for awful performance!)
-- At least 20GB of free space on your drive. We're going to eat a good chunk of it with app installs (mostly Xcode and build caches!)
+#### Requirements
+ - This script requires [macOS Tahoe](https://support.apple.com/en-us/102662) (26.x) and a compatible Mac. 
+ - This script requires at least 20GB of free space on your SSD. On a fresh install, this won't be an issue, but it's something to be aware of.
+ - This script should work with Intel Macs, but as I do not own any, I can't verify that. **You're on your own if you decide to use this on one!**
+ - This script *has* been tested on an M2 MacBook Pro (up to macOS Sequoia), M4 Pro MacBook Pro, and M4 Max Mac Studio.
+ - This script automatically updates your machine to the latest version of macOS. To opt-out, fork or download it and remove the ``sudo softwareupdate -i -a`` command.
+ 
+#### Recommendations
+ - I still highly recommend updating to the latest version of macOS available. Note that this script is only supported on macOS 26 Tahoe.
 
 I am going to go ahead and recommend you update to the latest version of macOS for your machine before starting (command is below). This isn't strictly necessary, but prevents any app incompatibilities and ensures you have all security fixes needed for browsing the modern web. If you'd like to opt out of this, note that **the script includes this at the end before the final restart command is issued**. You should fork the script and remove the command you see below.
 
@@ -23,12 +29,6 @@ NOTE: After the script installs Homebrew, you may need to rerun the script again
 ```
 /bin/bash -c "$(curl -fsSL https://slade.link/setup-mac)"
 ```
-
-#### Requirements
-
- - This script requires [macOS Tahoe](https://support.apple.com/en-us/102662) (26.x) and a compatible Mac. 
- - This script should work with Intel Macs, but as I do not own any, I can't verify that. **You're on your own if you decide to use this on one!**
- - This script *has* been tested on an M2 MacBook Pro (up to macOS Sequoia), M4 Pro MacBook Pro, and M4 Max Mac Studio.
 
 ### OS X Mavericks
 #### Prerequisites 
