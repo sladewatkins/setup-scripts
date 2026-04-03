@@ -4,25 +4,21 @@ I use these to automate the [setup of my computers](https://slade.link/setup) an
 ## Macs
 I use Macs as my primary daily driver computers, because I find them extremely reliable, especially as they get older. Heck, I've even given my parents my old M2 MacBook Pro and they seem to enjoy it!
 
+For some background: I originally switched away from Windows in 2016 because an old friend gave me a [2010 Mac mini](https://support.apple.com/en-us/112588) and later a 2011 MacBook Pro, which resulted in me falling in love with macOS (I updated to [macOS Sierra](https://512pixels.net/projects/aqua-screenshot-library/macos-10-12-sierra/) from Mavericks as updates stopped in September 2016 and I switched to Mac in November 2016) rather quickly. I've been using Macs in some capacity ever since (although I've had a Windows or Linux computer around, too, as I've gotten into PC games.) You can see the setup I run these days [on my website here](https://slade.link/setup).
+
 ### macOS (Tahoe 26.x)
 
 #### Requirements
- - This script requires [macOS Tahoe](https://support.apple.com/en-us/102662) (26.x) and a compatible Mac. 
+ - This script requires [macOS 26 Tahoe](https://support.apple.com/en-us/102662) (26.x) and a compatible Mac. 
  - This script requires at least 20GB of free space on your SSD. On a fresh install, this won't be an issue, but it's something to be aware of.
- - This script should work with Intel Macs, but as I do not own any, I can't verify that. **You're on your own if you decide to use this on one!**
+ - This script should work with modern Intel Macs still supported by macOS 26 Tahoe, but as I do not own any, I can't verify that. **You're on your own if you decide to use this on one!**
  - This script *has* been tested on an M2 MacBook Pro (up to macOS Sequoia), M4 Pro MacBook Pro, and M4 Max Mac Studio.
  - This script automatically updates your machine to the latest version of macOS. To opt-out, fork or download it and remove the ``sudo softwareupdate -i -a`` command.
  
 #### Recommendations
- - I still highly recommend updating to the latest version of macOS available. Note that this script is only supported on macOS 26 Tahoe.
+ - I still highly recommend updating to the latest version of macOS available. This isn't strictly necessary, but prevents any app incompatibilities and ensures you have all security fixes needed for browsing the modern web. If you'd like to opt out of this, note that **the script includes this at the end before the final restart command is issued**. You should fork the script and remove the command you see below. ***Please note that this script is ONLY supported on macOS 26 Tahoe.***
 
-I am going to go ahead and recommend you update to the latest version of macOS for your machine before starting (command is below). This isn't strictly necessary, but prevents any app incompatibilities and ensures you have all security fixes needed for browsing the modern web. If you'd like to opt out of this, note that **the script includes this at the end before the final restart command is issued**. You should fork the script and remove the command you see below.
-
-```
-sudo softwareupdate -i -a
-```
-
-Copy, paste, then run this command in **Terminal.app**. Keep in mind, it's setting up the Terminal and all apps on the system to act like me, not you. I would actually recommend you fork this repo and change the scripts yourself first.
+If you're ready to go, paste, then run this command in **Terminal.app**. Keep in mind, it's setting up the Terminal and all apps on the system to act like me, not you. I would actually recommend you fork this repo and change the scripts yourself first.
 
 NOTE: After the script installs Homebrew, you may need to rerun the script again. Push up on the keyboard a couple times until you see it again, or just CMD+V the script address below. Should come right back and eventually continue where it left off!
 
@@ -44,7 +40,7 @@ curl slade.link/setup-mav | sh
 ```
 
 ## Windows 11
-**NOTICE**: I won't support this script for Windows 10. I only recommend running this on Windows 11 24H2 or later.
+**NOTICE**: I won't support this script for Windows 10. I only recommend running this on Windows 11 24H2 or later, and even then, it isn't actively updated anymore as I've recently acquired a System76 Thelio Mira and have switched to Linux.
 
 ### Prerequisites
 - Windows 11 24H2 or later (Insider builds, with the exception of Canary channel, are probably fine)
