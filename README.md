@@ -24,10 +24,13 @@ NOTE: After the script installs Homebrew, you may need to rerun the script again
 /bin/bash -c "$(curl -fsSL https://slade.link/setup-mac)"
 ```
 
-This script requires [macOS Tahoe](https://support.apple.com/en-us/102662) (26.x). It should work fine on Intel Macs, but I've only tested on Apple silicon (M2 & M4, M4 Pro, and M4 Max). (**Note:** Apple plans to sunset Intel Mac support with this release. For my own purposes, I will be splitting the setup script off into a separate ``mac-intel-tahoe.sh`` file when macOS 27 releases as a Developer Beta in June.)
+#### Requirements
+
+ - This script requires [macOS Tahoe](https://support.apple.com/en-us/102662) (26.x) and a compatible Mac. 
+ - This script should work with Intel Macs, but as I do not own any, I can't verify that. **You're on your own if you decide to use this on one!**
+ - This script *has* been tested on an M2 MacBook Pro (up to macOS Sequoia), M4 Pro MacBook Pro, and M4 Max Mac Studio.
 
 ### OS X Mavericks
-
 #### Prerequisites 
 - Needs to be a [Mavericks-era Mac](https://support.apple.com/en-us/112560) or Hackintosh.
 - Do not expect miracles.
