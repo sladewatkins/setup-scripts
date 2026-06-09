@@ -6,6 +6,10 @@ I use Macs as my primary daily driver computers, because I find them extremely r
 
 For some background: I originally switched away from Windows in 2016 because an old friend gave me a [2010 Mac mini](https://support.apple.com/en-us/112588) and later a 2011 MacBook Pro, which resulted in me falling in love with macOS (I updated to [macOS Sierra](https://512pixels.net/projects/aqua-screenshot-library/macos-10-12-sierra/) from Mavericks as updates stopped in September 2016 and I switched to Mac in November 2016) rather quickly. I've been using Macs in some capacity ever since (although I've had a Windows or Linux computer around, too, as I've gotten into PC games.) You can see the setup I run these days [on my website here](https://slade.link/setup).
 
+### macOS (Golden Gate 27.x)
+
+Details to come!
+
 ### macOS (Tahoe 26.x)
 
 #### Requirements
