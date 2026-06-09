@@ -9,7 +9,7 @@ For some background: I originally switched away from Windows in 2016 because an 
 ### macOS (Tahoe 26.x)
 
 #### Requirements
- - This script requires [macOS 26 Tahoe](https://support.apple.com/en-us/102662) (26.x) and a compatible Mac. 
+ - This script requires [macOS 26 Tahoe](https://support.apple.com/en-us/102662) (26.x) and a compatible Mac. Starting in September 2026, this script will no longer support Intel Macs and will be duplicated into a separate ``mac-intel.sh`` file for use on macOS 26.x Tahoe.
  - This script requires at least 20GB of free space on your SSD. On a fresh install, this won't be an issue, but it's something to be aware of.
  - This script should work with modern Intel Macs still supported by macOS 26 Tahoe, but as I do not own any, I can't verify that. **You're on your own if you decide to use this on one!**
  - This script *has* been tested on an M2 MacBook Pro (up to macOS Sequoia), M4 Pro MacBook Pro, and M4 Max Mac Studio.
