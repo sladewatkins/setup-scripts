@@ -1,0 +1,101 @@
+# This is the script intended for Intel Macs, in an archived state.
+# If you are not using an Intel Mac, you're using the wrong script.
+# Please visit https://github.com/sladewatkins/setup-scripts for the correct script.
+
+# enter user admin password
+echo "This script is about to ask for your admin password. Please provide it so it doesn't have to nag for it later."
+sudo true
+
+# install xcode-select
+echo "Installing Xcode Command Line Tools (these are important for later.)"
+sudo xcode-select --install
+
+# configure git
+echo "Configuring git with user name, email, and editor now."
+git config --global user.name "Slade Watkins"
+git config --global user.email sr@sladewatkins.com
+git config --global core.editor "nano"
+# I don't declare a key here, because 1Password handles that.
+git config --global gpg.format ssh
+git config --global commit.gpgsign true
+git config --global credential.helper 'store'
+git config --global sendemail.smtpserver 'smtp.gmail.com'
+git config --global sendemail.smtpuser 'you@gmail.com'
+git config --global sendemail.smtpPass 'na'
+git config --global sendemail.smtpencryption 'ssl'
+git config --global sendemail.smtpserverport '465'
+git config --global sendemail.identify=sladewatkins.com
+echo "Configured git, with the exception of send-email username and password. Please configure those in the config file."
+
+# Homebrew, because practically everything is on there that you need
+echo "Checking if Homebrew is installed..."
+if test ! $(which brew); then
+  echo "Homebrew is not installed. Running installer..."
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+else
+  echo "Homebrew is installed, skipping this step."
+fi
+
+# install Rosetta 2 for Apple silicon computers (games need it)
+# This will be removed from this install script with macOS 28, as Rosetta 2 will be.
+if [[ "$(uname -m)" == "arm64" ]]; then
+  echo "This is an Apple silicon Mac, installing Rosetta 2 and Silicon Info now."
+  echo "Note: this will be removed from this install script with macOS 28, as Rosetta 2 will be."
+  sudo softwareupdate --install-rosetta --agree-to-license
+  brew install silicon-info
+else
+  echo "This is not an Apple silicon Mac, skipping Rosetta 2 and Silicon Info installation."
+fi
+
+# Gatekeeper - allow apps from Anywhere
+# make sure to go enable in settings manually later!
+echo "Enabling hidden Apps from Anywhere option in the Privacy & Security menu."
+sudo spctl --master-disable
+echo "Enabled, make sure to go enable that manually in System Settings once the script is finished running."
+
+# autocorrect begone
+echo "Disabling Autocorrect..."
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+defaults write NSGlobalDomain WebAutomaticSpellingCorrectionEnabled -bool false
+sudo defaults write /System/Library/User\ Template/Non_localized/Library/Preferences/.GlobalPreferences NSAutomaticSpellingCorrectionEnabled -bool false
+sudo defaults write /System/Library/User\ Template/Non_localized/Library/Preferences/.GlobalPreferences WebAutomaticSpellingCorrectionEnabled -bool false
+echo "Autocorrect should now be disabled."
+
+# disable Time Machine nags
+echo "Disabling nags to enable Time Machine backups of this machine."
+defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
+echo "Time Machine nags are now disabled."
+
+# search current folder by default
+echo "Setting Finder to search the current folder by default..."
+sudo defaults write /System/Library/User\ Template/Non_localized/Library/Preferences/com.apple.finder FXDefaultSearchScope -string "SCcf"
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+echo "Finder will now search the current folder by default."
+
+# update Homebrew && get all my mandatory apps from it
+# everything I need to get some serious work done the computer
+echo "Now updating Homebrew and installing applications."
+brew update && brew install altserver 1password 1password-cli discord spotify steam steamcmd prismlauncher iina git imageoptim microsoft-office android-platform-tools rbenv mas obs roblox dolphin coconutbattery alacritty
+brew tap nextfire/tap
+brew install apple-music-discord-rpc
+brew services restart apple-music-discord-rpc
+brew services start nextfire/tap/apple-music-discord-rpc
+echo "Homebrew has been updated and applications are installed."
+
+# Mac App Store apps (install through MAS command line)
+# Future Slade, please make sure your Mac is logged into your Apple ID or some of these might fail (authentication for the paid apps)
+# fun fact: if any of you reading this google "mac app store" alongside the id number, it'll tell you what they are!
+# for example, "mac app store 899247664" returns results for "TestFlight", which I use to beta test apps on iOS/macOS!
+# remember that if you're ever confused what something is (it's gonna happen)
+echo "Installing apps from the Mac App Store."
+mas install 497799835 899247664 1569813296 1436953057 1659154653 1508706541 2144121543 1463298887 1435957248 1346247457
+echo "All apps from the Mac App Store have been installed..."
+
+# Make sure you're on the latest version of macOS and have ALL updates
+echo "Now updating macOS to the latest version available for this machine... BEWARE - after this step completes, the script will auto-restart the computer!"
+sudo softwareupdate -i -a
+
+echo "Updates complete. Rebooting in 15 seconds."
+sudo shutdown -h +0.25
