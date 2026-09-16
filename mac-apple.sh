@@ -2,6 +2,14 @@
 # Basically, I was sick of setting up my Mac from scratch every time since I fresh install each new release of macOS
 # so I wrote this to make it mostly automate itself. Cool, huh?
 
+echo "We need to check to ensure you're running on Apple silicon (M1 and later, or A18 Pro and later). Note that Intel Macs are no longer able to use this script, and that this script requires macOS 27 Golden Gate, an Apple silicon only release."
+if [[ "$(uname -m)" == "x86_64" ]]; then
+echo "You have an Intel Mac. You cannot run this version of the script, please swap over to the Intel version of the script or rollback to macOS 26 Tahoe."
+exit
+else
+echo "Great news! You have an Apple silicon Mac. Installation will continue in a second."
+fi
+
 # enter user admin password
 echo "This script is about to ask for your admin password. Please provide it so it doesn't have to nag for it later."
 sudo true
