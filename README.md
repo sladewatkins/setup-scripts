@@ -8,15 +8,10 @@ For some background: I originally switched away from Windows in 2016 because an 
 
 ### macOS (Golden Gate 27.x)
 
-Details to come!
-
-### macOS (Tahoe 26.x)
-
 #### Requirements
- - This script requires [macOS 26 Tahoe](https://support.apple.com/en-us/102662) (26.x) and a compatible Mac. Starting in September 2026, this script will no longer support Intel Macs and will be duplicated into a separate ``mac-intel.sh`` file for use on macOS 26.x Tahoe.
+ - This script requires [macOS 27 Golden Gate](https://support.apple.com/en-us/102662) (27.x) and a compatible Mac. There's an update to the script coming that will force it automatically quit if you are on Intel-based systems (macOS Tahoe or earlier). For your own sanity, I'd use the Intel compatible script below, which I plan to update with ways around apps removing Universal 2 binary support.
  - This script requires at least 20GB of free space on your SSD. On a fresh install, this won't be an issue, but it's something to be aware of.
- - This script should work with modern Intel Macs still supported by macOS 26 Tahoe, but as I do not own any, I can't verify that. **You're on your own if you decide to use this on one!**
- - This script *has* been tested on an M2 MacBook Pro (up to macOS Sequoia), M4 Pro MacBook Pro, and M4 Max Mac Studio.
+ - This script *has* been tested on an M2 MacBook Pro (up to macOS Sequoia), M4 Pro MacBook Pro, M4 Max Mac Studio, and M5 Max MacBook Pro.
  - This script automatically updates your machine to the latest version of macOS. To opt-out, fork or download it and remove the ``sudo softwareupdate -i -a`` command.
  
 #### Recommendations
@@ -27,7 +22,26 @@ If you're ready to go, paste, then run this command in **Terminal.app**. Keep in
 NOTE: After the script installs Homebrew, you may need to rerun the script again. Push up on the keyboard a couple times until you see it again, or just CMD+V the script address below. Should come right back and eventually continue where it left off!
 
 ```
-/bin/bash -c "$(curl -fsSL https://slade.link/setup-mac)"
+/bin/bash -c "$(curl -fsSL https://slade.link/setup-mac-apple)"
+```
+
+### macOS (Tahoe 26.x) for Intel-based Macs
+This script also works for macOS 15 Sequoia, I was a little too strict before. Go nuts.
+
+#### Requirements
+ - This script requires [macOS 26 Tahoe](https://support.apple.com/en-us/102662) (26.x) or macOS 15 Sequoia, and a compatible Mac.
+ - This script requires at least 20GB of free space on your SSD. On a fresh install, this won't be an issue, but it's something to be aware of.
+ - This script automatically updates your machine to the latest version of macOS. **If that happens to be macOS 27 Golden Gate, please update to that -- it is what Tahoe should have been.** To opt-out of any updates, you can of course fork or download this script and remove the ``sudo softwareupdate -i -a`` command.
+ 
+#### Recommendations
+ - I still highly recommend updating to the latest version of macOS available. This isn't strictly necessary, but prevents any app incompatibilities and ensures you have all security fixes needed for browsing the modern web. If you'd like to opt out of this, note that **the script includes this at the end before the final restart command is issued**. You should fork the script and remove the command you see below.
+ - 
+If you're ready to go, paste, then run this command in **Terminal.app**. Keep in mind, it's setting up the Terminal and all apps on the system to act like me, not you. I would actually recommend you fork this repo and change the scripts yourself first.
+
+NOTE: After the script installs Homebrew, you may need to rerun the script again. Push up on the keyboard a couple times until you see it again, or just CMD+V the script address below. Should come right back and eventually continue where it left off!
+
+```
+/bin/bash -c "$(curl -fsSL https://slade.link/setup-mac-intel)"
 ```
 
 ### OS X Mavericks
