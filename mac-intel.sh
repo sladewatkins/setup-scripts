@@ -1,6 +1,14 @@
-# This is the script intended for Intel Macs, in an archived state.
+# This is the script intended for Intel Macs, in a semi-archived state.
 # If you are not using an Intel Mac, you're using the wrong script.
 # Please visit https://github.com/sladewatkins/setup-scripts for the correct script.
+
+echo "We need to check to ensure you're running on an Intel-based Mac. Note that Apple silicon Macs are no longer able to use this script, and that this script requires macOS 26 Tahoe or macOS 15 Sequoia"
+if [[ "$(uname -m)" == "arm64" ]]; then
+echo "You have an Apple silicon Mac. You cannot run this version of the script, please swap over to the Apple silicon version of the script or upgrade to macOS 27 Golden Gate."
+exit
+else
+echo "Great news! You have an Intel Mac. Installation will continue in a second."
+fi
 
 # enter user admin password
 echo "This script is about to ask for your admin password. Please provide it so it doesn't have to nag for it later."
