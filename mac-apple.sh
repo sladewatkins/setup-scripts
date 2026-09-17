@@ -84,7 +84,7 @@ echo "Finder will now search the current folder by default."
 # update Homebrew && get all my mandatory apps from it
 # everything I need to get some serious work done the computer
 echo "Now updating Homebrew and installing applications."
-brew update && brew install altserver 1password 1password-cli discord spotify steam steamcmd prismlauncher iina git imageoptim microsoft-office android-platform-tools rbenv mas obs roblox dolphin coconutbattery alacritty
+brew update && brew install 1password 1password-cli alacritty discord spotify steam steamcmd prismlauncher vlc git imageoptim microsoft-office android-platform-tools rbenv mas obs roblox dolphin coconutbattery altserver
 brew tap nextfire/tap
 brew install apple-music-discord-rpc
 brew services restart apple-music-discord-rpc
@@ -96,9 +96,13 @@ echo "Homebrew has been updated and applications are installed."
 # fun fact: if any of you reading this google "mac app store" alongside the id number, it'll tell you what they are!
 # for example, "mac app store 899247664" returns results for "TestFlight", which I use to beta test apps on iOS/macOS!
 # remember that if you're ever confused what something is (it's gonna happen)
+open /System/Applications/App\ Store.app
+echo "The App Store should be opening, this script will continue after 30 seconds. Ensure you are signed in to your Apple Account in the meantime!"
+sleep 30
+killall "App Store"
 echo "Installing apps from the Mac App Store."
 mas install 497799835 899247664 1569813296 1436953057 1659154653 1508706541 2144121543 1463298887 1435957248 1346247457
-echo "All apps from the Mac App Store have been installed..."
+echo "All apps from the Mac App Store should have been installed. Double check and make sure you have everything!"
 
 # Make sure you're on the latest version of macOS and have ALL updates
 echo "Now updating macOS to the latest version available for this machine... BEWARE - after this step completes, the script will auto-restart the computer!"
