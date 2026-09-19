@@ -2,7 +2,40 @@
 # If you are not using an Intel Mac, you're using the wrong script.
 # Please visit https://github.com/sladewatkins/setup-scripts for the correct script.
 
-echo "We need to check to ensure you're running on an Intel-based Mac. Note that Apple silicon Macs are no longer able to use this script, and that this script requires macOS 26 Tahoe or macOS 15 Sequoia"
+cat << 'EOF'
+                                    ..'
+                                 ,xNMM.
+                               .OMMMMo
+                               lMM"
+                     .;loddo:.  .olloddol;.
+                   cKMMMMMMMMMMNWMMMMMMMMMM0:
+                 .KMMMMMMMMMMMMMMMMMMMMMMMWd.
+                 XMMMMMMMMMMMMMMMMMMMMMMMX.
+                ;MMMMMMMMMMMMMMMMMMMMMMMM:
+                :MMMMMMMMMMMMMMMMMMMMMMMM:
+                .MMMMMMMMMMMMMMMMMMMMMMMMX.
+                 kMMMMMMMMMMMMMMMMMMMMMMMMWd.
+                 'XMMMMMMMMMMMMMMMMMMMMMMMMMMk
+                  'XMMMMMMMMMMMMMMMMMMMMMMMMK.
+                    kMMMMMMMMMMMMMMMMMMMMMMd
+                     ;KMMMMMMMWXXWMMMMMMMk.
+                       "cooc*"    "*coo'
+
+=================================================================
+ We need to check to ensure you're running on an Intel-based 
+ Mac. Note that Apple silicon Macs are no longer able to use
+ this script, and that this script requires macOS 26 
+ Tahoe or macOS 15 Sequoia.
+=================================================================
+EOF
+
+read -r -p "Press 'y' to continue: " -n 1 confirm
+echo
+if [[ "$confirm" != "y" && "$confirm" != "Y" ]]; then
+  echo "Setup has been cancelled by user."
+  exit 1
+fi
+echo
 if [[ "$(uname -m)" == "arm64" ]]; then
 echo "You have an Apple silicon Mac. You cannot run this version of the script, please swap over to the Apple silicon version of the script or upgrade to macOS 27 Golden Gate."
 exit

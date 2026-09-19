@@ -2,7 +2,40 @@
 # Basically, I was sick of setting up my Mac from scratch every time since I fresh install each new release of macOS
 # so I wrote this to make it mostly automate itself. Cool, huh?
 
-echo "We need to check to ensure you're running on Apple silicon (M1 and later, or A18 Pro and later). Note that Intel Macs are no longer able to use this script, and that this script requires macOS 27 Golden Gate, an Apple silicon only release."
+cat << 'EOF'
+                                    ..'
+                                 ,xNMM.
+                               .OMMMMo
+                               lMM"
+                     .;loddo:.  .olloddol;.
+                   cKMMMMMMMMMMNWMMMMMMMMMM0:
+                 .KMMMMMMMMMMMMMMMMMMMMMMMWd.
+                 XMMMMMMMMMMMMMMMMMMMMMMMX.
+                ;MMMMMMMMMMMMMMMMMMMMMMMM:
+                :MMMMMMMMMMMMMMMMMMMMMMMM:
+                .MMMMMMMMMMMMMMMMMMMMMMMMX.
+                 kMMMMMMMMMMMMMMMMMMMMMMMMWd.
+                 'XMMMMMMMMMMMMMMMMMMMMMMMMMMk
+                  'XMMMMMMMMMMMMMMMMMMMMMMMMK.
+                    kMMMMMMMMMMMMMMMMMMMMMMd
+                     ;KMMMMMMMWXXWMMMMMMMk.
+                       "cooc*"    "*coo'
+
+=================================================================
+ This script is designed exclusively for Apple silicon Macs
+ (M1 and later, or A18 Pro and later). Note that Intel Macs are
+ no longer able to use this script, and that this script requires
+ macOS 27 Golden Gate, an Apple silicon only release.
+=================================================================
+EOF
+
+read -r -p "Press 'y' to continue: " -n 1 confirm
+echo
+if [[ "$confirm" != "y" && "$confirm" != "Y" ]]; then
+  echo "Setup has been cancelled by user."
+  exit 1
+fi
+echo
 if [[ "$(uname -m)" == "x86_64" ]]; then
 echo "You have an Intel Mac. You cannot run this version of the script, please swap over to the Intel version of the script or rollback to macOS 26 Tahoe."
 exit
