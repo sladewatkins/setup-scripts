@@ -15,7 +15,7 @@ For some background: I originally switched away from Windows in 2016 because an 
  - This script automatically updates your machine to the latest version of macOS. To opt-out, fork or download it and remove the ``sudo softwareupdate -i -a`` command.
  
 #### Recommendations
- - I still highly recommend updating to the latest version of macOS available. This isn't strictly necessary, but prevents any app incompatibilities and ensures you have all security fixes needed for browsing the modern web. If you'd like to opt out of this, note that **the script includes this at the end before the final restart command is issued**. You should fork the script and remove the command you see below. ***Please note that this script is ONLY supported on macOS 26 Tahoe.***
+ - I still highly recommend updating to the latest version of macOS available. This isn't strictly necessary, but prevents any app incompatibilities and ensures you have all security fixes needed for browsing the modern web. If you'd like to opt out of this, note that **the script includes this at the end before the final restart command is issued**. You should fork the script and remove the command you see below. ***Please note that this script is ONLY supported on macOS 26 Tahoe and macOS 27 Golden Gate.***
 
 If you're ready to go, paste, then run this command in **Terminal.app**. Keep in mind, it's setting up the Terminal and all apps on the system to act like me, not you. I would actually recommend you fork this repo and change the scripts yourself first.
 
@@ -31,7 +31,7 @@ This script also works for macOS 15 Sequoia, I was a little too strict before. G
 #### Requirements
  - This script requires [macOS 26 Tahoe](https://support.apple.com/en-us/102662) (26.x) or macOS 15 Sequoia, and a compatible Mac.
  - This script requires at least 20GB of free space on your SSD. On a fresh install, this won't be an issue, but it's something to be aware of.
- - This script automatically updates your machine to the latest version of macOS. **If that happens to be macOS 27 Golden Gate, please update to that -- it is what Tahoe should have been.** To opt-out of any updates, you can of course fork or download this script and remove the ``sudo softwareupdate -i -a`` command.
+ - This script automatically updates your machine to the latest version of macOS. **If that happens to be macOS 27 Golden Gate, please update to that -- it is what Tahoe should have been and you should update ASAP.** To opt-out of any updates, you can of course fork or download this script and remove the ``sudo softwareupdate -i -a`` command.
  
 #### Recommendations
  - I still highly recommend updating to the latest version of macOS available. This isn't strictly necessary, but prevents any app incompatibilities and ensures you have all security fixes needed for browsing the modern web. If you'd like to opt out of this, note that **the script includes this at the end before the final restart command is issued**. You should fork the script and remove the command you see below.
